@@ -91,6 +91,63 @@ body {
     background-color: var(--background-color-light);
 }
 
+h1 {
+    font-family: var(--font-header);
+    color: var(--dark-pink-light);
+    font-weight: 400;
+    font-size: 2.18rem;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: -0.05em;
+    line-height: 0.8;
+    margin-top: var(--rhythm);
+    padding: 0 0.5rem;
+    padding-bottom: 15px;
+}
+
+h2 {
+    font-family: var(--font-header);
+    font-weight: 625;
+    font-size: 1.625rem;
+    text-align: center;
+    color: var(--dark-pink-light);
+}
+
+h3 {
+    font-family: var(--font-header-italic);
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+p {
+    color: var(--dark-text-light);
+    font-family: var(--font-body);
+    font-size: .8rem;
+    font-weight: 500;
+    margin: 0 auto;
+    max-width: 100%;
+    line-height: 1.2rem;
+    /*text-wrap: pretty;*/
+}
+
+a {
+    font-family: var(--font-body-bold);
+}
+
+ul {
+    font-family: var(--font-body);
+}
+
+ul li {
+    margin-bottom:5px;
+}
+
+h2 p {
+    font-size: 1.8rem;
+}
+
+/* navigation */
 nav {
     background-color: var(--main-pink);
     height: 80px;
@@ -121,10 +178,10 @@ label.logo img {
     text-transform: uppercase;
  }
 
- a.active, a:hover{
+ /*a.active, a:hover{
     background: var(--dark-purple);
     transition: .5s;
- }
+ }*/
 
  .checkbtn {
     font-size: 30px;
@@ -190,9 +247,111 @@ label.logo img {
     }
  }
 
- @media screen and (min-width: 1000px) {
+
+ /* Home Page Containers */
+
+.workAndProjects img {
+    height: auto;
+    width: 100%;
+} 
+
+@media screen and (min-width: 1000px) {
     .profileimg {
         content: url(../images/home/my-profile-large.png);
+    }
+    /*.box {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 900px;
+        margin: 20px;
+    }
+    .box img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+    .box p h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 40px;
+    }
+    .container .box{
+        display: grid;
+        grid-template-columns: 420px 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        min-height: 150px;
+        max-width: 1400px;
+    }
+    .box h3 p btn{
+        align-items: left;
+    } */
+
+    .container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 900px;
+        height: 380px;
+        background-color:  var(--dark-pink);
+        margin: 20px;
+    }
+
+    .container .img-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+
+    .container .details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+
+    .container .details h3 {
+        text-transform: uppercase;
+        font-size: 2em;
+        line-height: 1em;
+        color: var(--background-color-light);
+    }
+
+    .container .details p {
+        max-width: 85%;
+        margin-left: 15%;
+        font-size: 18px;
+        color: var(--background-color-light);
+        margin-bottom: 36px;
+    }
+    
+    .container .details .btn {
+        background-color: var(--background-color-light);
+        color: var(--dark-teal);
+        border: none;
+        outline: none;
+        padding: 15px 20px;
+        margin-top: 5px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-radius: 40px;
+        text-align: center;
     }
  }
 
@@ -201,3 +360,14 @@ label.logo img {
         content: url(../images/home/my-profile-medium.png);
     }
  }
+
+ .textUnderProfile {
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    padding: 0 1.5rem;
+    font-size: 1.5rem;
+    line-height: 25px;
+    color: var(--dark-teal);
+    font-weight: 700;
+}
