@@ -3,18 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Maple Tieu Portfolio</title>
         <!-- Links Style Sheet onto Html -->
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
         crossorigin="anonymous" referrerpolicy="no-referrer">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
+        <nav>
+            <input type= "checkbox" id="check">
+            <label for="check" class= "checkbtn">
+                <i class="fas fa-bars"> </i>
+            </label>
+            <label class = "logo"> 
+                <a href="index.html"> <img src = "images/home/my-logo.png" alt= Logo> </a> 
+            </label>
+            <ul>
+                <li> <a class="active" href="index.html"> Home </a> </li>
+                <li> <a href="about-me.html">About Me</a> </li>
+                <li> <a href="projects.html">Projects</a> </li>
+                <li> <a href="creative-works.html">Creative</a> </li>
+                <li> <a href="resume.html">Resume</a> </li>
+            </ul>
+        </nav>
         <!-- Navigation -->
-        <label>
+        <!--<label>
             <input type="checkbox">
             <span class="menu"> <span class="hamburger"></span> </span>
                 <ul>
@@ -24,14 +41,14 @@
                 <li> <a href="creative-works.html">Creative</a> </li>
                 <li> <a href="resume.html">Resume</a> </li>
                 </ul>
-        </label>
-        <!-- Header -->
-        <h1>I'm Maple! A Drexel student that recently transfer from CS to UI/UX design!</h1>
-        <div class = "banner">
-            <img src="images/creative-works/my-profile.png" alt="My Profile">
-        </div>
-        <p class = "textUnderProfile"> Scroll down to see projects I have worked on!</p>
+        </label> -->
 
+        <!-- Header -->
+    <section class="banner">
+        <img class= "profileimg" src="images/home/my-profile-small.png" alt="My Profile">
+        <h1>I'm Maple! A Drexel student that recently transfer from CS to UI/UX design!</h1>
+        <p class = "textUnderProfile"> Scroll down to see projects I have worked on!</p>
+    </section>
 <section class = "workAndProjects">
 <div class = "projects"> 
     <div class = "wrapper">
