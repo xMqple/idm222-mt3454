@@ -370,6 +370,12 @@ card-content p {
 }
 
 /* project and work format */
+
+.projectBanner img{
+    width: 100%;
+    height: auto;
+}
+
 .projectAndWork {
     margin-left: 20px;
     margin-right: 20px;
