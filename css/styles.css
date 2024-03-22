@@ -438,3 +438,44 @@ card-content p {
     }
  }
 
+/* resume format */
+.resume {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.resume b {
+    color: var(--dark-blue-light);
+}
+
+.resume p {
+    color: var(--dark-blue-light);
+}
+
+.resume h3 {
+    color: var(--dark-blue-light);
+}
+
+.resume ul {
+    font-size: .9rem;
+    margin-bottom: 30px;
+    color: var(--background-color-dark)
+}
+
+.resume ul + h2 {
+    margin-top: -30px;
+}
+
+.resumeCategory {
+    padding: 1.3rem 0 10px 0;
+}
+
+
+.resumeSection {
+    font-size: 1rem;
+    line-height: 30px;
+    font-weight: 750;
+    margin-bottom: 1rem;
+}
+
+/* resume format ends */

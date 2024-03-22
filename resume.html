@@ -15,17 +15,21 @@
 <body>
     <main>
         <!-- Navigation -->
-        <label>
-            <input type="checkbox">
-            <span class="menu"> <span class="hamburger"></span> </span>
-                <ul>
-                <li> <a href="index.html">Home</a> </li>
+        <nav>
+            <input type= "checkbox" id="check">
+            <label for="check" class= "checkbtn">
+                <i class="fas fa-bars"> </i>
+            </label>
+            <label class = "logo"> 
+                <a href="index.html"> <img src = "images/home/my-logo.png" alt= Logo> </a> 
+            </label>
+            <ul>
+                <li> <a class="active" href="index.html"> Home </a> </li>
                 <li> <a href="about-me.html">About Me</a> </li>
                 <li> <a href="projects.html">Projects</a> </li>
-                <li> <a href="creative-works.html">Creative</a> </li>
                 <li> <a href="resume.html">Resume</a> </li>
-                </ul>
-        </label>
+            </ul>
+        </nav>
         <!-- Header -->
         <div class = "resume">
             <h1> Maple Tieu </h1>
@@ -155,24 +159,31 @@
         </div>
     </main>
 <!-- Footer -->
-    <footer>
-        <div class = "footerContainer">
-            <a class ="resumeButton" href="resume.html"> View My Resume </a>
-                <div class="footerIcons">
-                    <!-- LinkedIn icon -->
-                    <a href="https://www.linkedin.com/in/maple-tieu-4b18441b3/" target="_blank">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                    <!-- Email icon -->
-                    <a href="mailto:mt3454@drexel.edu" target="_blank">
-                        <i class="fa fa-envelope"></i>
-                    </a>
-                    <!-- Github icon -->
-                    <a href="https://github.com/xMqple" target="_blank">
-                        <i class="fa fa-github"></i>
-                    </a>
-                </div>
+<footer>
+    <div class = "footerContainer">
+        <div class="footerIcons">
+            <!-- LinkedIn icon -->
+            <a href="https://www.linkedin.com/in/maple-tieu-4b18441b3/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+            </a>
+            <!-- Email icon -->
+            <a href="mailto:mt3454@drexel.edu" target="_blank">
+                <i class="fa fa-envelope"></i>
+            </a>
+            <!-- Github icon -->
+            <a href="https://github.com/xMqple" target="_blank">
+                <i class="fa fa-github"></i>
+            </a>
         </div>
-    </footer>
+        <div class="footerNav">
+            <ul>
+                <li> <a class="active" href="index.html"> Home </a> </li>
+                <li> <a href="about-me.html">About Me</a> </li>
+                <li> <a href="projects.html">Projects</a> </li>
+                <li> <a href="resume.html">Resume</a> </li>
+            </ul>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
