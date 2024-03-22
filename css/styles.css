@@ -93,12 +93,11 @@ body {
 
 h1 {
     font-family: var(--font-header);
-    color: var(--dark-pink-light);
-    font-weight: 400;
+    color: var(--dark-pink);
+    font-weight: 200;
     font-size: 2.18rem;
     text-align: center;
     font-weight: bold;
-    letter-spacing: -0.05em;
     line-height: 0.8;
     margin-top: var(--rhythm);
     padding: 0 0.5rem;
@@ -304,6 +303,7 @@ label.logo img {
         text-align: center;
         margin: 10px;
     }
+
  }
 
 /*homepage*/
@@ -316,7 +316,6 @@ label.logo img {
     padding: 15px;
     border-radius: 25px;
   }
-
 
 
  /* Project Containers */
@@ -370,26 +369,66 @@ card-content p {
     color: var(--dark-teal);
 }
 
+/* project and work format */
+.projectAndWork {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.projectAndWork img {
+    height: auto;
+    width: 100% 
+}
+
+.projectAndWork h2 {
+    padding: 1rem 0 0 0;
+}
+.projectAndWork p {
+    padding: 0 0 1rem 0;
+    font-size: .9rem;
+    color: var(--background-color-dark)
+}
+
+.projectAndWork p + h2 {
+    margin-top: -1rem;
+}
+
+/* Desktop */
 @media screen and (min-width: 1000px) {
     .profileimg {
         content: url(../images/home/my-profile-large.png);
     }
-   
  }
-
+ 
+/* Tablet */
  @media (min-width: 834px) {
     .profileimg {
         content: url(../images/home/my-profile-medium.png);
     }
+    /* homepage banner */
+    .banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner img {
+        max-width: 100%;
+    }
+    
+    img-col{
+        flex-basis: 50%;
+    }
+
+    /*dremulator images*/
+    .img-container {
+        max-width: 800px;
+        height: 500px;
+        margin: 0 auto;
+        display: flex;
+    }
+    .img-container img{
+        width: 100%;
+    }
  }
 
- .textUnderProfile {
-    text-align: center;
-    margin-top: 3px;
-    margin-bottom: 10px;
-    padding: 0 1.5rem;
-    font-size: 1.5rem;
-    line-height: 25px;
-    color: var(--dark-teal);
-    font-weight: 700;
-}
